@@ -13,7 +13,7 @@ start:
        slt $t7,$t3,$t4	 #t7 get set to 1   
        sll $t0,$t1,2  	 #t0 get (00000003 << 2) = 0000000C
        srl $t1,$t4,3  	 #t1 get (CCCCCCCC >> 3) = 19999999
-       sra $t2,$t3,6  	 #t2 get (33333333 >> 6) = 00CCCCCC
+       sra $t2,$t3,6  	 #t2 get (33333333 >>> 6) = 00CCCCCC
        sub $t5,$t1,$t2   #t5 (19999999 - 00CCCCCC) = 18CCCCCD
        #testing some i-type instructions
        slti $t6,$t7,10  #t6 set to 1 

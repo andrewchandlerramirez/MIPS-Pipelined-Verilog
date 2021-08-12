@@ -150,7 +150,7 @@ module MIPS_Pipelined
         .reg_write_in(ID_EX_0_reg_write_out),
         .reg_write_out(EX_MEM_0_reg_write_out),
         .rst(Net1),
-        .rt_data_in(ID_EX_0_rt_data_out),
+        .rt_data_in(alu_rt_data),
         .rt_data_out(EX_MEM_0_rt_data_out));
   Forwarding_Unit Forwarding_Unit_0
        (.EX_MEM_rd(EX_MEM_0_rd_out),

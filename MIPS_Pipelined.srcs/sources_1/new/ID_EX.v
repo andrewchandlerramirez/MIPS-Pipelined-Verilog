@@ -71,7 +71,7 @@ always@(posedge clk, posedge rst)begin
     else begin
         mem_read_out <= mem_read_in;
         mem_to_reg_out <= mem_to_reg_in;
-        mem_write_out <= mem_write_out;
+        mem_write_out <= mem_write_in;
         alu_src_out <= alu_src_in;
         reg_write_out <= reg_write_in;
         rs_data_out <= rs_data_in;
