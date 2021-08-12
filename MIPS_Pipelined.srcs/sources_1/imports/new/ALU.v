@@ -52,13 +52,13 @@ always@(*) begin
         //6'h0D: result = rs  rt;
         //6'h0E: result = rs  rt;
         //6'h0F: result = rs  rt;
-        6'h10: result = rs >>> shamt;
+        6'h10: result = rt >>> shamt;
         6'h11: result = (rs < rt)? 32'h00000001: 32'h00000000;
         6'h12: result = (rs < rt)? 32'h00000001: 32'h00000000;
-        6'h13: result = rs >> shamt;
+        6'h13: result = rt >> shamt;
         //6'h14: result = rs / rt; does this actually work for divisions
         //6'h15: result = rs / rt;
-        6'h16: result = rs << shamt;
+        6'h16: result = rt << shamt;
         6'h17: result = (rs < rt)? 32'h00000001: 32'h00000000;
         6'h18: result = (rs < rt)? 32'h00000001: 32'h00000000;
         6'h19: result = rs & rt;

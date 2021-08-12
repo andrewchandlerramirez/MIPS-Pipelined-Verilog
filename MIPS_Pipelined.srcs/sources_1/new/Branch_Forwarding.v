@@ -42,24 +42,28 @@ always@(*)begin
        (EX_MEM_rd == IF_ID_rs) && 
        (EX_MEM_rd != 5'b0))
             forward_A = 2'b10;/////////////////////
-    else if((EX_MEM_reg_write == 1'b1) && 
-            (EX_MEM_rd == IF_ID_rt) && 
-            (EX_MEM_rd != 5'b0))
-            forward_B = 2'b10;/////////////////////
-    else if((MEM_WB_reg_write == 1'b1) && 
+     else if((MEM_WB_reg_write == 1'b1) && 
             (MEM_WB_rd == IF_ID_rs) && 
             (MEM_WB_rd != 5'b0) &&
             ~((EX_MEM_reg_write == 1'b1) && (EX_MEM_rd == IF_ID_rs) && (EX_MEM_rd != 5'b0)))
-            forward_A = 2'b01;/////////////////////
+            forward_A = 2'b01;/////////////////////       
+     else begin
+        forward_A = 2'b0;        
+        end       
+            
+            
+    if((EX_MEM_reg_write == 1'b1) && 
+            (EX_MEM_rd == IF_ID_rt) && 
+            (EX_MEM_rd != 5'b0))
+            forward_B = 2'b10;/////////////////////
+    
     else if((MEM_WB_reg_write == 1'b1) && 
             (MEM_WB_rd == IF_ID_rt) && 
             (MEM_WB_rd != 5'b0) &&
              ~((EX_MEM_reg_write == 1'b1) && (EX_MEM_rd == IF_ID_rt) && (EX_MEM_rd != 5'b0)))
             forward_B = 2'b01;/////////////////////
     else begin
-        forward_A = 2'b0;
         forward_B = 2'b0;
-        
         end
 end
 
