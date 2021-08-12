@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Control_Unit(Hazard,op_code,reg_dst,jump,beq,bne,blez,bgtz,mem_read,mem_to_reg,alu_op,mem_write,alu_src, reg_write);
-input Hazard;    
+module Control_Unit(continue,op_code,reg_dst,jump,beq,bne,blez,bgtz,mem_read,mem_to_reg,alu_op,mem_write,alu_src, reg_write);
+input continue;    
 input [5:0] op_code;//used to set control signals in processor
 output reg[5:0] alu_op; //just pass opcode
 //output reg [4:0] shamt; //shift amount is 5 bit from inst[10:6]
@@ -41,13 +41,8 @@ output reg reg_dst //destination register changing from R type to I type (rd to 
 always@(*) begin
     alu_op = op_code;
     
-    if(Hazard)begin 
+    if(continue == 1'b0)begin 
                 reg_dst = 1'b0; 
-                jump = 1'b0; 
-                beq  = 1'b0;
-                bne  = 1'b0; 
-                blez = 1'b0; 
-                bgtz = 1'b0; 
                 mem_read = 1'b0;
                 mem_to_reg = 1'b0;
                 mem_write = 1'b0;

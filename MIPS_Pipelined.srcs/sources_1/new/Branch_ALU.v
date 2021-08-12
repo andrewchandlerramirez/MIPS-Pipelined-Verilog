@@ -41,7 +41,7 @@ always@(*) begin
     case(alu_cntl) 
         6'h1F: result = rs - rt;//need to add harware for both beq and bne
         6'h20: result = rs - rt;//
-        6'h21: result = (rs <= 32'h00000000)? 32'h00000001: 32'h00000000;//assuming we are comparing rs, we can set first bit of result and use it for conformation and add hardware
+        6'h21: result = (rs <= 32'h00000000)? 32'h00000001: 32'h00000000;//assuming we are comparing rt, we can set first bit of result and use it for conformation and add hardware
         6'h22: result = (rs > 32'h00000000)?  32'h00000001: 32'h00000000;
         default: result = 32'h00000000;
     endcase

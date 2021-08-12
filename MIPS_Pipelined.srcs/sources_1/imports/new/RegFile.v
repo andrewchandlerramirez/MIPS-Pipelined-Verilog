@@ -31,8 +31,8 @@ output reg[31:0] rs,rt;//registers to be read
 
 reg [31:0] mem1 [0:31];
 reg [31:0] i;//used in for loop to easily reset mem1
-always@(posedge clk,posedge rst) begin
-    if(rst) begin
+always@(negedge clk,posedge rst) begin //negedge clk allows regfile to be written and read correctly, preventing the need for more forwarding logic
+    if(rst) begin                      // write back stage(MEM/WB) writes on posedge, regfile updates on negedge, instruction decode stage gets correct information on next posedge (ID/EX) 
         for( i = 0; i <= 31; i = i + 1)
         mem1[i] <= 32'h0000;    
     end
