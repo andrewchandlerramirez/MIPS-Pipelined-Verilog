@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MIPS_PipelineBD_wrapper_tf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MIPS_PipelineBD_wrapper_tf" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="396595fs"></ZoomStartTime>
+      <ZoomEndTime time="1747205fs"></ZoomEndTime>
+      <Cursor1Time time="860000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group248" type="group">
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_0/PC_Write" type="logic">
+         <obj_property name="ElementShortName">PC_Write</obj_property>
+         <obj_property name="ObjectShortName">PC_Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_0/Din" type="array">
+         <obj_property name="ElementShortName">Din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Din[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_0/Dout" type="array">
+         <obj_property name="ElementShortName">Dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dout[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group269" type="group">
+      <obj_property name="label">instmem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Instmem_0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Instmem_0/address" type="array">
+         <obj_property name="ElementShortName">address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Instmem_0/inst" type="array">
+         <obj_property name="ElementShortName">inst[31:0]</obj_property>
+         <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Instmem_0/InstMem" type="array">
+         <obj_property name="ElementShortName">InstMem[0:64][31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstMem[0:64][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Instmem_0/i" type="array">
+         <obj_property name="ElementShortName">i[8:0]</obj_property>
+         <obj_property name="ObjectShortName">i[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">IF_ID</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/flush" type="logic">
+         <obj_property name="ElementShortName">flush</obj_property>
+         <obj_property name="ObjectShortName">flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/IF_ID_Write" type="logic">
+         <obj_property name="ElementShortName">IF_ID_Write</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/pc_in" type="array">
+         <obj_property name="ElementShortName">pc_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_in[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/inst" type="array">
+         <obj_property name="ElementShortName">inst[31:0]</obj_property>
+         <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/pc_out" type="array">
+         <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/op_code" type="array">
+         <obj_property name="ElementShortName">op_code[5:0]</obj_property>
+         <obj_property name="ObjectShortName">op_code[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/func" type="array">
+         <obj_property name="ElementShortName">func[5:0]</obj_property>
+         <obj_property name="ObjectShortName">func[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/rs" type="array">
+         <obj_property name="ElementShortName">rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/rt" type="array">
+         <obj_property name="ElementShortName">rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/rd" type="array">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/shamt" type="array">
+         <obj_property name="ElementShortName">shamt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">shamt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/jump_address" type="array">
+         <obj_property name="ElementShortName">jump_address[25:0]</obj_property>
+         <obj_property name="ObjectShortName">jump_address[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/IF_ID_0/immediate" type="array">
+         <obj_property name="ElementShortName">immediate[15:0]</obj_property>
+         <obj_property name="ObjectShortName">immediate[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group382" type="group">
+      <obj_property name="label">Hazard_Detection</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/ID_EX_MemRead" type="logic">
+         <obj_property name="ElementShortName">ID_EX_MemRead</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/EX_MEM_MemRead" type="logic">
+         <obj_property name="ElementShortName">EX_MEM_MemRead</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/beq" type="logic">
+         <obj_property name="ElementShortName">beq</obj_property>
+         <obj_property name="ObjectShortName">beq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/bne" type="logic">
+         <obj_property name="ElementShortName">bne</obj_property>
+         <obj_property name="ObjectShortName">bne</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/blez" type="logic">
+         <obj_property name="ElementShortName">blez</obj_property>
+         <obj_property name="ObjectShortName">blez</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/bgtz" type="logic">
+         <obj_property name="ElementShortName">bgtz</obj_property>
+         <obj_property name="ObjectShortName">bgtz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/ID_EX_rt" type="array">
+         <obj_property name="ElementShortName">ID_EX_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/IF_ID_rs" type="array">
+         <obj_property name="ElementShortName">IF_ID_rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/IF_ID_rt" type="array">
+         <obj_property name="ElementShortName">IF_ID_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/EX_MEM_rt" type="array">
+         <obj_property name="ElementShortName">EX_MEM_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/ID_EX_rd" type="array">
+         <obj_property name="ElementShortName">ID_EX_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Hazard_Detection_Unit_0/continue" type="logic">
+         <obj_property name="ElementShortName">continue</obj_property>
+         <obj_property name="ObjectShortName">continue</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="group140" type="group">
+      <obj_property name="label">RegFile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/w_en" type="logic">
+         <obj_property name="ElementShortName">w_en</obj_property>
+         <obj_property name="ObjectShortName">w_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/read1" type="array">
+         <obj_property name="ElementShortName">read1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">read1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/read2" type="array">
+         <obj_property name="ElementShortName">read2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">read2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/w_reg" type="array">
+         <obj_property name="ElementShortName">w_reg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">w_reg[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/w_data" type="array">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/rs" type="array">
+         <obj_property name="ElementShortName">rs[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/rt" type="array">
+         <obj_property name="ElementShortName">rt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/RegFile_0/mem1" type="array">
+         <obj_property name="ElementShortName">mem1[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem1[0:31][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group397" type="group">
+      <obj_property name="label">Control_Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/continue" type="logic">
+         <obj_property name="ElementShortName">continue</obj_property>
+         <obj_property name="ObjectShortName">continue</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/op_code" type="array">
+         <obj_property name="ElementShortName">op_code[5:0]</obj_property>
+         <obj_property name="ObjectShortName">op_code[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/alu_op" type="array">
+         <obj_property name="ElementShortName">alu_op[5:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_op[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/reg_dst" type="logic">
+         <obj_property name="ElementShortName">reg_dst</obj_property>
+         <obj_property name="ObjectShortName">reg_dst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/jump" type="logic">
+         <obj_property name="ElementShortName">jump</obj_property>
+         <obj_property name="ObjectShortName">jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/beq" type="logic">
+         <obj_property name="ElementShortName">beq</obj_property>
+         <obj_property name="ObjectShortName">beq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/bne" type="logic">
+         <obj_property name="ElementShortName">bne</obj_property>
+         <obj_property name="ObjectShortName">bne</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/blez" type="logic">
+         <obj_property name="ElementShortName">blez</obj_property>
+         <obj_property name="ObjectShortName">blez</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/bgtz" type="logic">
+         <obj_property name="ElementShortName">bgtz</obj_property>
+         <obj_property name="ObjectShortName">bgtz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/mem_read" type="logic">
+         <obj_property name="ElementShortName">mem_read</obj_property>
+         <obj_property name="ObjectShortName">mem_read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/mem_to_reg" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/mem_write" type="logic">
+         <obj_property name="ElementShortName">mem_write</obj_property>
+         <obj_property name="ObjectShortName">mem_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/alu_src" type="logic">
+         <obj_property name="ElementShortName">alu_src</obj_property>
+         <obj_property name="ObjectShortName">alu_src</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Control_Unit_0/reg_write" type="logic">
+         <obj_property name="ElementShortName">reg_write</obj_property>
+         <obj_property name="ObjectShortName">reg_write</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group327" type="group">
+      <obj_property name="label">Branch_Forwarding</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/EX_MEM_reg_write" type="logic">
+         <obj_property name="ElementShortName">EX_MEM_reg_write</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_reg_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/EX_MEM_rd" type="array">
+         <obj_property name="ElementShortName">EX_MEM_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/MEM_WB_reg_write" type="logic">
+         <obj_property name="ElementShortName">MEM_WB_reg_write</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_reg_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/MEM_WB_rd" type="array">
+         <obj_property name="ElementShortName">MEM_WB_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/IF_ID_rs" type="array">
+         <obj_property name="ElementShortName">IF_ID_rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/IF_ID_rt" type="array">
+         <obj_property name="ElementShortName">IF_ID_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/forward_A" type="array">
+         <obj_property name="ElementShortName">forward_A[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_A[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_Forwarding_0/forward_B" type="array">
+         <obj_property name="ElementShortName">forward_B[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_B[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group333" type="group">
+      <obj_property name="label">Branch_F_mux_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rs/sel" type="array">
+         <obj_property name="ElementShortName">sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rs/IF_ID_INPUT" type="array">
+         <obj_property name="ElementShortName">IF_ID_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rs/EX_MEM_RD" type="array">
+         <obj_property name="ElementShortName">EX_MEM_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rs/MEM_WB_RD" type="array">
+         <obj_property name="ElementShortName">MEM_WB_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rs/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group339" type="group">
+      <obj_property name="label">Branch_F_mux_2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rt/sel" type="array">
+         <obj_property name="ElementShortName">sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rt/IF_ID_INPUT" type="array">
+         <obj_property name="ElementShortName">IF_ID_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rt/EX_MEM_RD" type="array">
+         <obj_property name="ElementShortName">EX_MEM_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rt/MEM_WB_RD" type="array">
+         <obj_property name="ElementShortName">MEM_WB_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/rt/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group369" type="group">
+      <obj_property name="label">ALU_Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Alu_cntl_0/op" type="array">
+         <obj_property name="ElementShortName">op[5:0]</obj_property>
+         <obj_property name="ObjectShortName">op[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Alu_cntl_0/func" type="array">
+         <obj_property name="ElementShortName">func[5:0]</obj_property>
+         <obj_property name="ObjectShortName">func[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Alu_cntl_0/alu_cntl" type="array">
+         <obj_property name="ElementShortName">alu_cntl[5:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_cntl[5:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group346" type="group">
+      <obj_property name="label">Branch_ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_ALU_0/rs" type="array">
+         <obj_property name="ElementShortName">rs[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_ALU_0/rt" type="array">
+         <obj_property name="ElementShortName">rt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_ALU_0/alu_cntl" type="array">
+         <obj_property name="ElementShortName">alu_cntl[5:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_cntl[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_ALU_0/zero" type="logic">
+         <obj_property name="ElementShortName">zero</obj_property>
+         <obj_property name="ObjectShortName">zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_ALU_0/alu_lsb" type="logic">
+         <obj_property name="ElementShortName">alu_lsb</obj_property>
+         <obj_property name="ObjectShortName">alu_lsb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Branch_ALU_0/result" type="array">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group365" type="group">
+      <obj_property name="label">Sign_Extend</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Sign_Extend_0/Din" type="array">
+         <obj_property name="ElementShortName">Din[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Din[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Sign_Extend_0/Dout" type="array">
+         <obj_property name="ElementShortName">Dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dout[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group362" type="group">
+      <obj_property name="label">PC_Next</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/pc_IF" type="array">
+         <obj_property name="ElementShortName">pc_IF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_IF[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/pc_ID" type="array">
+         <obj_property name="ElementShortName">pc_ID[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_ID[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/branch_address" type="array">
+         <obj_property name="ElementShortName">branch_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">branch_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/jump_address" type="array">
+         <obj_property name="ElementShortName">jump_address[25:0]</obj_property>
+         <obj_property name="ObjectShortName">jump_address[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/jump" type="logic">
+         <obj_property name="ElementShortName">jump</obj_property>
+         <obj_property name="ObjectShortName">jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/beq" type="logic">
+         <obj_property name="ElementShortName">beq</obj_property>
+         <obj_property name="ObjectShortName">beq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/bne" type="logic">
+         <obj_property name="ElementShortName">bne</obj_property>
+         <obj_property name="ObjectShortName">bne</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/blez" type="logic">
+         <obj_property name="ElementShortName">blez</obj_property>
+         <obj_property name="ObjectShortName">blez</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/bgtz" type="logic">
+         <obj_property name="ElementShortName">bgtz</obj_property>
+         <obj_property name="ObjectShortName">bgtz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/zero" type="logic">
+         <obj_property name="ElementShortName">zero</obj_property>
+         <obj_property name="ObjectShortName">zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/alu_lsb" type="logic">
+         <obj_property name="ElementShortName">alu_lsb</obj_property>
+         <obj_property name="ObjectShortName">alu_lsb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/Dout" type="array">
+         <obj_property name="ElementShortName">Dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/flush" type="logic">
+         <obj_property name="ElementShortName">flush</obj_property>
+         <obj_property name="ObjectShortName">flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/pc_4_IF" type="array">
+         <obj_property name="ElementShortName">pc_4_IF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_4_IF[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/PC_Next_0/pc_4_ID" type="array">
+         <obj_property name="ElementShortName">pc_4_ID[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_4_ID[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group47" type="group">
+      <obj_property name="label">ID_EX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/mem_read_in" type="logic">
+         <obj_property name="ElementShortName">mem_read_in</obj_property>
+         <obj_property name="ObjectShortName">mem_read_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/mem_to_reg_in" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg_in</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/mem_write_in" type="logic">
+         <obj_property name="ElementShortName">mem_write_in</obj_property>
+         <obj_property name="ObjectShortName">mem_write_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/alu_src_in" type="logic">
+         <obj_property name="ElementShortName">alu_src_in</obj_property>
+         <obj_property name="ObjectShortName">alu_src_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/reg_write_in" type="logic">
+         <obj_property name="ElementShortName">reg_write_in</obj_property>
+         <obj_property name="ObjectShortName">reg_write_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/continue" type="logic">
+         <obj_property name="ElementShortName">continue</obj_property>
+         <obj_property name="ObjectShortName">continue</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rs_data_in" type="array">
+         <obj_property name="ElementShortName">rs_data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs_data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rt_data_in" type="array">
+         <obj_property name="ElementShortName">rt_data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt_data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/alu_cntl_in" type="array">
+         <obj_property name="ElementShortName">alu_cntl_in[5:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_cntl_in[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rs_in" type="array">
+         <obj_property name="ElementShortName">rs_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rt_in" type="array">
+         <obj_property name="ElementShortName">rt_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rt_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rd_in" type="array">
+         <obj_property name="ElementShortName">rd_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/shamt_in" type="array">
+         <obj_property name="ElementShortName">shamt_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">shamt_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/immediate_in" type="array">
+         <obj_property name="ElementShortName">immediate_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">immediate_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/mem_read_out" type="logic">
+         <obj_property name="ElementShortName">mem_read_out</obj_property>
+         <obj_property name="ObjectShortName">mem_read_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/mem_to_reg_out" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg_out</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/mem_write_out" type="logic">
+         <obj_property name="ElementShortName">mem_write_out</obj_property>
+         <obj_property name="ObjectShortName">mem_write_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/alu_src_out" type="logic">
+         <obj_property name="ElementShortName">alu_src_out</obj_property>
+         <obj_property name="ObjectShortName">alu_src_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/reg_write_out" type="logic">
+         <obj_property name="ElementShortName">reg_write_out</obj_property>
+         <obj_property name="ObjectShortName">reg_write_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rs_data_out" type="array">
+         <obj_property name="ElementShortName">rs_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs_data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rt_data_out" type="array">
+         <obj_property name="ElementShortName">rt_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt_data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/alu_cntl_out" type="array">
+         <obj_property name="ElementShortName">alu_cntl_out[5:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_cntl_out[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rs_out" type="array">
+         <obj_property name="ElementShortName">rs_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs_out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rt_out" type="array">
+         <obj_property name="ElementShortName">rt_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rt_out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/rd_out" type="array">
+         <obj_property name="ElementShortName">rd_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/shamt_out" type="array">
+         <obj_property name="ElementShortName">shamt_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">shamt_out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ID_EX_0/immediate_out" type="array">
+         <obj_property name="ElementShortName">immediate_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">immediate_out[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group128" type="group">
+      <obj_property name="label">ForwardingUnit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/EX_MEM_reg_write" type="logic">
+         <obj_property name="ElementShortName">EX_MEM_reg_write</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_reg_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/EX_MEM_rd" type="array">
+         <obj_property name="ElementShortName">EX_MEM_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/MEM_WB_reg_write" type="logic">
+         <obj_property name="ElementShortName">MEM_WB_reg_write</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_reg_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/MEM_WB_rd" type="array">
+         <obj_property name="ElementShortName">MEM_WB_rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/ID_EX_rs" type="array">
+         <obj_property name="ElementShortName">ID_EX_rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/ID_EX_rt" type="array">
+         <obj_property name="ElementShortName">ID_EX_rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/forward_A" type="array">
+         <obj_property name="ElementShortName">forward_A[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_A[1:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Forwarding_Unit_0/forward_B" type="array">
+         <obj_property name="ElementShortName">forward_B[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_B[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group146" type="group">
+      <obj_property name="label">ForwardingMux1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rs/sel" type="array">
+         <obj_property name="ElementShortName">sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rs/ID_EX_INPUT" type="array">
+         <obj_property name="ElementShortName">ID_EX_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rs/EX_MEM_RD" type="array">
+         <obj_property name="ElementShortName">EX_MEM_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rs/MEM_WB_RD" type="array">
+         <obj_property name="ElementShortName">MEM_WB_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rs/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group152" type="group">
+      <obj_property name="label">ForwardingMux2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rt/sel" type="array">
+         <obj_property name="ElementShortName">sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rt/ID_EX_INPUT" type="array">
+         <obj_property name="ElementShortName">ID_EX_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EX_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rt/EX_MEM_RD" type="array">
+         <obj_property name="ElementShortName">EX_MEM_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rt/MEM_WB_RD" type="array">
+         <obj_property name="ElementShortName">MEM_WB_RD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_RD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/alu_rt/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group280" type="group">
+      <obj_property name="label">Immediate_Mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Immediate_rt/sel" type="logic">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Immediate_rt/a" type="array">
+         <obj_property name="ElementShortName">a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Immediate_rt/b" type="array">
+         <obj_property name="ElementShortName">b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Immediate_rt/c" type="array">
+         <obj_property name="ElementShortName">c[31:0]</obj_property>
+         <obj_property name="ObjectShortName">c[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group286" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ALU_0/rs" type="array">
+         <obj_property name="ElementShortName">rs[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rs[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ALU_0/rt" type="array">
+         <obj_property name="ElementShortName">rt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ALU_0/alu_cntl" type="array">
+         <obj_property name="ElementShortName">alu_cntl[5:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_cntl[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ALU_0/shamt" type="array">
+         <obj_property name="ElementShortName">shamt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">shamt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/ALU_0/result" type="array">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group64" type="group">
+      <obj_property name="label">EX_MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/mem_read_in" type="logic">
+         <obj_property name="ElementShortName">mem_read_in</obj_property>
+         <obj_property name="ObjectShortName">mem_read_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/mem_to_reg_in" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg_in</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/mem_write_in" type="logic">
+         <obj_property name="ElementShortName">mem_write_in</obj_property>
+         <obj_property name="ObjectShortName">mem_write_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/reg_write_in" type="logic">
+         <obj_property name="ElementShortName">reg_write_in</obj_property>
+         <obj_property name="ObjectShortName">reg_write_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/rt_data_in" type="array">
+         <obj_property name="ElementShortName">rt_data_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt_data_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/alu_result_in" type="array">
+         <obj_property name="ElementShortName">alu_result_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/rd_in" type="array">
+         <obj_property name="ElementShortName">rd_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/mem_read_out" type="logic">
+         <obj_property name="ElementShortName">mem_read_out</obj_property>
+         <obj_property name="ObjectShortName">mem_read_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/mem_to_reg_out" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg_out</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/mem_write_out" type="logic">
+         <obj_property name="ElementShortName">mem_write_out</obj_property>
+         <obj_property name="ObjectShortName">mem_write_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/reg_write_out" type="logic">
+         <obj_property name="ElementShortName">reg_write_out</obj_property>
+         <obj_property name="ObjectShortName">reg_write_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/rt_data_out" type="array">
+         <obj_property name="ElementShortName">rt_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rt_data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/alu_result_out" type="array">
+         <obj_property name="ElementShortName">alu_result_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/EX_MEM_0/rd_out" type="array">
+         <obj_property name="ElementShortName">rd_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_out[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group119" type="group">
+      <obj_property name="label">Datamem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Datamem_0/read" type="logic">
+         <obj_property name="ElementShortName">read</obj_property>
+         <obj_property name="ObjectShortName">read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Datamem_0/write" type="logic">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Datamem_0/address" type="array">
+         <obj_property name="ElementShortName">address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Datamem_0/write_data" type="array">
+         <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Datamem_0/read_data" type="array">
+         <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/Datamem_0/datamem" type="array">
+         <obj_property name="ElementShortName">datamem[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">datamem[0:31][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group77" type="group">
+      <obj_property name="label">MEM_WB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/mem_to_reg_in" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg_in</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/reg_write_in" type="logic">
+         <obj_property name="ElementShortName">reg_write_in</obj_property>
+         <obj_property name="ObjectShortName">reg_write_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/alu_result_in" type="array">
+         <obj_property name="ElementShortName">alu_result_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/data_mem_in" type="array">
+         <obj_property name="ElementShortName">data_mem_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_mem_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/rd_in" type="array">
+         <obj_property name="ElementShortName">rd_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/mem_to_reg_out" type="logic">
+         <obj_property name="ElementShortName">mem_to_reg_out</obj_property>
+         <obj_property name="ObjectShortName">mem_to_reg_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/reg_write_out" type="logic">
+         <obj_property name="ElementShortName">reg_write_out</obj_property>
+         <obj_property name="ObjectShortName">reg_write_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/alu_result_out" type="array">
+         <obj_property name="ElementShortName">alu_result_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/data_mem_out" type="array">
+         <obj_property name="ElementShortName">data_mem_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_mem_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/MEM_WB_0/rd_out" type="array">
+         <obj_property name="ElementShortName">rd_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/mux_32_0/sel" type="logic">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/mux_32_0/a" type="array">
+         <obj_property name="ElementShortName">a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/mux_32_0/b" type="array">
+         <obj_property name="ElementShortName">b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MIPS_PipelineBD_wrapper_tf/UUT/mux_32_0/c" type="array">
+         <obj_property name="ElementShortName">c[31:0]</obj_property>
+         <obj_property name="ObjectShortName">c[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
