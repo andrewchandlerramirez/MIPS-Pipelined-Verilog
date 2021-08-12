@@ -27,9 +27,9 @@ output reg[31:0] Dout;
 
 always@(posedge clk,posedge rst) begin
     if(rst) 
-        Dout <= 32'h00000000;//28; //starting address to test branches and jump
+        Dout <= 32'h00000000;//change starting address depending on what instructions are in instmem
     else
-        if(PC_Write == 1'b1)
+        if(PC_Write == 1'b1)//pc will not update if continue == 0
             Dout <= Din;
     end
 

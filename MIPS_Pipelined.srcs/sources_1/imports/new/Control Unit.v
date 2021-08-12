@@ -122,7 +122,6 @@ always@(*) begin
                     alu_src  = 1'b1;//alu will use sign extended immediate as second input
                     reg_write= 1'b1;//regfile will be written
                 end
-            //6'h0F: alu_cntl = 6'h1B;// I //LUI LOAD UPPER IMMEDIATE
             6'h02: //alu_cntl = 6'h1C;// J //J JUMP TO ADDRESS
                 begin 
                     reg_dst = 1'bx; //destination irrelevent because reg_write = 1'b0;
@@ -151,7 +150,6 @@ always@(*) begin
                     alu_src  = 1'b1;//alu will use sign extended immediate as second input 
                     reg_write= 1'b0;//regfile will not be written
                 end
-            //6'h03: alu_cntl = 6'h1E;// J //JAL JUMP AND LINK
             6'h04: //alu_cntl = 6'h1F;// I //BEQ BRANCH IF EQUAL
                 begin 
                     reg_dst = 1'bx; //destination irrelevent because reg_write = 1'b0;
@@ -236,8 +234,6 @@ always@(*) begin
                     alu_src  = 1'b1;//alu will use sign extended immediate as second input
                     reg_write= 1'b1;//regfile will be written
                 end
-            //6'h10: alu_cntl = 6'h25;// R //MFC0 MOVE FROM COPROCESSOR 0
-            //6'h20: alu_cntl = 6'h26;// I //LB LOAD BYTE
             6'h23: //alu_cntl = 6'h27;// I //LW LOAD WORD
                 begin 
                     reg_dst = 1'b0; //destination register will be rt inst[20:16]
@@ -252,10 +248,6 @@ always@(*) begin
                     alu_src  = 1'b1;//alu will use sign extended immediate as second input 
                     reg_write= 1'b1;//regfile will be written
                 end
-            //6'h24: alu_cntl = 6'h28;// I //LBU LOAD BTYE UNIGNED
-            //6'h25: alu_cntl = 6'h29;// I //LHU LOAD HALF WORD UNSIGNED
-            //6'h28: alu_cntl = 6'h2A;// I //SB STORE BTYE
-            //6'h29: alu_cntl = 6'h2B;// I //SH STORE HALF WORD
          endcase
      end
 

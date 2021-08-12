@@ -37,7 +37,8 @@ input[4:0] IF_ID_rs,IF_ID_rt;
 
 output reg[1:0] forward_A,forward_B;
 
-always@(*)begin
+always@(*)begin 
+    //deciding if the branch alu input for rs will come from the ID,MEM, or WB stage.
     if((EX_MEM_reg_write == 1'b1) && 
        (EX_MEM_rd == IF_ID_rs) && 
        (EX_MEM_rd != 5'b0))
@@ -51,7 +52,7 @@ always@(*)begin
         forward_A = 2'b0;        
         end       
             
-            
+    //deciding if the branch alu input for rt will come from the ID,MEM, or WB stage.        
     if((EX_MEM_reg_write == 1'b1) && 
             (EX_MEM_rd == IF_ID_rt) && 
             (EX_MEM_rd != 5'b0))

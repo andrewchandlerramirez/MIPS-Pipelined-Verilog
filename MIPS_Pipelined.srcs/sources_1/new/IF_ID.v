@@ -42,9 +42,9 @@ always@(posedge clk, posedge rst)begin
         immediate<= 16'b0;
         func<= 6'b0;
     end
-    else if(IF_ID_Write == 1'b1)begin
+    else if(IF_ID_Write == 1'b1)begin//if continue is 0 then register will retain its values otherwise it is updated
     
-            if(flush == 1'b1) begin
+            if(flush == 1'b1) begin //if a branch or jump is taken then the IF stage will be flushed. 
                 pc_out <= 32'h00000000;
                 op_code <= 6'b0;
                 rs<= 5'b0;

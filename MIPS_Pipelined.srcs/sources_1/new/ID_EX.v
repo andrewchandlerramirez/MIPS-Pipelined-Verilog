@@ -53,7 +53,7 @@ always@(posedge clk, posedge rst)begin
         immediate_out<= 16'b0;
         alu_cntl_out <=6'b0;
     end
-    else if(continue == 1'b0) begin
+    else if(continue == 1'b0) begin //insert NOP if continue is 0
         mem_read_out <=1'b0;
         mem_to_reg_out <=1'b0;
         mem_write_out <= 1'b0;

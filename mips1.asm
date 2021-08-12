@@ -21,6 +21,7 @@ start:
        ori  $t1, $t0, 1  #t1 set to D
        sw   $t1,40($zero) #MEM[10] set to D
        lw   $t2,12($zero) #t2 set to 8
+       sw   $t2,120($zero) #MEM[30] set to 8
        #testing load-use stall
        add  $t3, $t0, $t2 #t3 set to 8 + C = 14 hex
        #testing EX forwarding
